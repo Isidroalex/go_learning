@@ -12,9 +12,10 @@ func SquareOfSum(n int) int {
 		return 0
 	}
 	for i := 1; i <= n; i++ {
-		result += i * i
+		result += i
 	}
-	return result
+	return result * result
+
 }
 
 func SumOfSquares(n int) int {
@@ -23,7 +24,7 @@ func SumOfSquares(n int) int {
 		return 0
 	}
 	for i := 1; i <= n; i++ {
-		result += i
+		result += i * i
 	}
-	return result * result
+	return result
 }
